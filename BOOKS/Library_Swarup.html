@@ -1,0 +1,608 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Library Mnagement System</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+
+    #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+  </style>
+</head>
+
+<body class="w3-light-grey">
+<br>
+<br>
+  <div class="w3-content" style="max-width:1400px">
+
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>Library Management</b></h1>
+      <p>Welcome to the blog of <span class="w3-tag">Library</span></p>
+
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    </header>
+
+    <div class="w3-row">
+
+      <div class="w3-col l8 s9">
+
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="#" alt="Nature" style="width:100%">
+          <div class="w3-container">
+            <h3><b>Living in the light</b></h3>
+            <h5>Author: <span class="w3-opacity">April 7, 2014</span></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, tempora est optio laudantium ut sequi
+              distinctio quis sint suscipit provident nisi hic eum consequuntur repellendus ea et, earum facilis magni!
+            </p>
+          </div>
+
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+              placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+              congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-tag">0</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>BLOG ENTRY</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+              placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+              congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>BLOG ENTRY</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+              placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+              congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-card-4 w3-margin w3-white">
+          <img src="#" alt="Norway" style="width:100%">
+          <div class="w3-container">
+            <h3><b>BLOG ENTRY</b></h3>
+            <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
+          </div>
+
+          <div class="w3-container">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod
+              placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non
+              congue ullam corper. Praesent tincidunt sed
+              tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+              fringilla.</p>
+            <div class="w3-row">
+              <div class="w3-col m8 s12">
+                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
+              </div>
+              <div class="w3-col m4 w3-hide-small">
+                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span class="w3-badge">2</span></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4">
+        <div class="w3-card w3-margin w3-margin-top">
+          <img src="#" style="width:100%">
+          <div class="w3-container w3-white">
+            <h4><b>My Name</b></h4>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of
+              lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </div>
+        <hr>
+
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Popular Posts</h4>
+          </div>
+          <ul class="w3-ul w3-hoverable w3-white">
+            <li class="w3-padding-16">
+              <img src="#" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="#" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="#" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Dorum</span><br>
+              <span>Ultricies congue</span>
+            </li>
+            <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+              <img src="#" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Mingsum</span><br>
+              <span>Lorem ipsum dipsum</span>
+            </li>
+          </ul>
+        </div>
+        <hr>
+
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-padding">
+            <h4>Tags</h4>
+          </div>
+          <div class="w3-container w3-white">
+            <a href="#"><p><span class="w3-tag w3-black w3-margin-bottom">Travel</span></a> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+              <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span
+                class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div><br>
+
+  </div>
+
+  <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+    <button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+    <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+  </footer>
+
+  <script>
+    function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      padding: 20px;
+      grid-gap: 20px;
+    }
+
+    .card {
+      background-color: #1c1b29;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    }
+
+    .container {
+      position: relative;
+      /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+      text-align: right;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+
+
+    .col {
+      float: left;
+      width: 25%;
+      padding: 0 10px;
+
+    }
+
+    .card {
+      background-color: whitesmoke;
+      text-align: center;
+      padding: 20px 15px;
+      color: black;
+      border: 4px double black;
+    }
+
+    p {
+      text-align: justify;
+      font-size: 10px;
+      padding: 10px 20px;
+    }
+
+
+    @media screen and (max-width: 600px) {
+      .col {
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* img {
+            height: 100%;
+            width: 100%;
+        } */
+    a {
+      text-decoration: none;
+    }
+
+    .previous {
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn{
+      border-color: #04AA6D;
+      color: green;
+    }
+    .btn:hover{
+      background-color: #04AA6D;
+  color: white;
+    }
+
+    .next{
+      border: 2px solid black;
+      background-color: white;
+      color: black;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .btn2{
+      border-color: #04AA6D;
+      color: green;
+    }
+    .btn2:hover{
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <br>
+  <a href="fake.html" style="font-size: 20px; background-color: black; color: white; padding: 10px 30px;">Home</a>
+  <br>
+  <br>
+
+  <h1 style="text-align: center;"><b>Library Management</b></h1>
+  <hr>
+  <div class="container">
+    <div class="input-filter">
+      <input type="text" name="" id="filter" class="filter" placeholder="Search books here.." onkeyup="searchProduct()">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row" id="card-lists">
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Rich Dad Poor Dad.jpg" style="height: 210px;">
+          <div class="card-body">
+            <a href="#">
+              <h3 class="card-title">Rick Dad Poor Dad</h3>
+            </a>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Boundaries.jpg" style="height: 210px;">
+          <div class="card-body">
+            <h3 class="card-title">Boundaries</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Give and Take.jpg" style="height: 210px; ">
+          <div class="card-body">
+            <h3 class="card-title">Give and Take</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Living in the Light.jpg" style="height: 210px;">
+          <div class="card-body">
+            <h3 class="card-title">Living in the Light</h3>
+            <h4>Author Name</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div class="row" id="card-lists">
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Practical Ayurveda.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">Practical Arurveda</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Resisting Happiness.jpg" style="height: 220px; ">
+          <div class="card-body">
+            <h3 class="card-title">Resisting Happiness</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi
+              cumque cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Rich Dad Poor Dad.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">Rich Dad Poor Dad</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="Start Where You Are A Guide to Compassionate Living.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">Start Where yoiu are</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div class="row" id="card-lists">
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="The Gifts of Imperfection.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">The Gifts of Imperfection</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="The Power of Now.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">The power of Now</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="The Purpose-Driven Life.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">The Purpose-Driven life</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="#">
+        <div class="card">
+          <img src="You Are Not So Smart.jpg" style="height: 220px;">
+          <div class="card-body">
+            <h3 class="card-title">You Are Not So Smart</h3>
+            <h4>Author Name: </h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cupiditate officia, animi cumque
+              cum nemo
+              eius hic obcaecati libero velit?</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <button class="previous btn" style="align-items: left;">Previous</button>
+  <a href="fake.html"><button class="Next btn2" style="align-items: right;">Next »</button></a>
+
+  <script>
+    function searchProduct() {
+      const input = document.getElementById('filter').value.toUpperCase();
+      const cardContainer = document.getElementById('card-lists');
+      console.log(cardContainer);
+
+      const cards = cardContainer.getElementsByClassName('card');
+      console.log(cards);
+
+      for (let i = 0; i < cards.length; i++) {
+        let title = cards[i].querySelector(".card-body h3.card-title");
+        console.log(title);
+
+        if (title.innerText.toUpperCase().indexOf(input) > -1) {
+          cards[i].style.display = "";
+        } else {
+          cards[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
